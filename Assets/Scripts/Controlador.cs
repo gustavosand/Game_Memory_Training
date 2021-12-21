@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Controlador : MonoBehaviour
 {
     public void CambiarEscena(string nombre){
-        print("asda"+nombre);
         SceneManager.LoadScene(nombre);
     }
 
