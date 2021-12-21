@@ -28,4 +28,10 @@ public class TimeController : MonoBehaviour
             
         }
     }
+	
+	public void BuySeconds(){
+		if(DataPlayer.monedas < 10) return;
+		restante += 10;
+		DataPlayer.monedas-=10;
+	}
 }
