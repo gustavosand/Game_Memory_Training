@@ -5,7 +5,7 @@ using System;
 using UnityEngine.UI;
 
 
-public class CardsController : MonoBehaviour
+public class AsiaCardsController : MonoBehaviour
 {
 	
 	public GameObject Card;
@@ -35,19 +35,24 @@ public class CardsController : MonoBehaviour
 			//end animation
 			
 			StartCoroutine(WaitTime2());
-			CardDefinition xScript = XSelected.GetComponent<CardDefinition>();
-			CardDefinition yScript = YSelected.GetComponent<CardDefinition>();
+			AsiaCardDefinition xScript = XSelected.GetComponent<AsiaCardDefinition>();
+			AsiaCardDefinition yScript = YSelected.GetComponent<AsiaCardDefinition>();
 			
 			if(xScript.GetId() == yScript.GetId()){
 				xScript.SaveAnimal();
 				yScript.SaveAnimal();
+				DataPlayer.monedas++;
 			}else{
 				xScript.HideAnimal();
 				yScript.HideAnimal();
+				
 			}
 			cantSelected = 0;
 		}
 		
+		if(isLevelCompleted()){
+			AsiaController.CambiarEscena("Niveles");
+		}
 		
     }
 	
@@ -147,14 +152,14 @@ public class CardsController : MonoBehaviour
 			GameObject card = Instantiate(Card,new Vector2 (0, 0), Quaternion.identity);
 			Image img = card.GetComponent<Image>();
 			img.sprite = spriteReverse;
-			CardDefinition cS = card.GetComponent<CardDefinition>();
+			AsiaCardDefinition cS = card.GetComponent<AsiaCardDefinition>();
 			cS.SetAnimalSprite(spritesArray[spriteCont]);
 			cS.SetId(spritesArray[spriteCont]);
 			
 			GameObject cardPair = Instantiate(Card,new Vector2 (0, 0), Quaternion.identity);
 			Image imgPair = cardPair.GetComponent<Image>();
 			imgPair.sprite = spriteReverse;
-			CardDefinition cSPair = cardPair.GetComponent<CardDefinition>();
+			AsiaCardDefinition cSPair = cardPair.GetComponent<AsiaCardDefinition>();
 			cSPair.SetAnimalSprite(spritesArray[spriteCont]);
 			cSPair.SetId(spritesArray[spriteCont]);
 			
@@ -187,6 +192,13 @@ public class CardsController : MonoBehaviour
 			values[i] = values[j];
 			values[j] = temp;
 		}
+	}
+	
+	bool isLevelCompleted(){
+		for(int i=0;i<cardsArray.Length;++i){
+			if(cardsArray[i].GetComponent<AsiaCardDefinition>().status != 2)	return false;
+		}
+		return true;
 	}
 
 }
