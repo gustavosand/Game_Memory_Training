@@ -217,8 +217,8 @@ GameObject:
   - component: {fileID: 534807885}
   - component: {fileID: 534807887}
   - component: {fileID: 534807886}
-  - component: {fileID: 534807888}
   - component: {fileID: 534807889}
+  - component: {fileID: 534807888}
   m_Layer: 5
   m_Name: TextCreditos
   m_TagString: Untagged
@@ -238,12 +238,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1399978803}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00002861, y: -1034.7439}
-  m_SizeDelta: {x: 1366, y: 1315.3462}
+  m_AnchoredPosition: {x: 0, y: -1155.2}
+  m_SizeDelta: {x: 1366, y: 1542.3455}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &534807886
 MonoBehaviour:
@@ -266,7 +266,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: f1828b5d9b927b64490dce101a9f09b7, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -278,9 +278,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\nUNIVERSIDAD NACIONAL DE SAN AGUST\xCDN\n\r\nFACULTAD DE INGENIER\xCDA
+  m_Text: "UNIVERSIDAD NACIONAL DE SAN AGUST\xCDN\n\r\nFACULTAD DE INGENIER\xCDA
     DE PRODUCCI\xD3N Y SERVICIOS\r\n\nESCUELA PROFESIONAL DE INGENIER\xCDA DE SISTEMAS\r\n\n\n_____________________________________________\r\n       
-    \r\n\t\"MEMORY TRAINIG\"\r\n_____________________________________________\r\n\n\n\n\tDESARROLLADORES\r\n\r\nRIOS
+    \r\n\t\"MEMORY TRAINING\"\r\n_____________________________________________\r\n\n\n\n\tDESARROLLADORES\r\n\r\nRIOS
     CASTILLO MELANY\nLOPEZ RODRIQUEZ JHEYSON\r\nHUARCA THEA EDER GUSTAVO\r\nQUISPE
     HUAMAN EMERSON ARTURO\r\n\n"
 --- !u!222 &534807887
@@ -322,6 +322,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aad0ce582a44824e889412bfd131420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &641585351
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 641585352}
+  - component: {fileID: 641585354}
+  - component: {fileID: 641585353}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &641585352
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641585351}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1399978803}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1366, y: 768}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &641585353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641585351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3773585, g: 0.3109902, b: 0.22249912, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: 6fc55c4a47ef1614c8c5811f4ae25816, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &641585354
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 641585351}
+  m_CullTransparentMesh: 1
 --- !u!1 &653806657
 GameObject:
   m_ObjectHideFlags: 0
@@ -412,7 +484,7 @@ VideoPlayer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1063199006}
-  m_Enabled: 1
+  m_Enabled: 0
   m_VideoClip: {fileID: 32900000, guid: 2b55cc9ce54ab0345934e60eba61ae6e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
@@ -476,7 +548,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148760791}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f2831f2da07e86a4397291ef9414d8b9, type: 3}
@@ -670,6 +742,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
+  - {fileID: 641585352}
   - {fileID: 534807885}
   m_Father: {fileID: 0}
   m_RootOrder: 1
