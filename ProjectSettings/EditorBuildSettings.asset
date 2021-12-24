@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Modos.unity
     guid: bf8142080e956af41a3b157eed473177
   - enabled: 1
-    path: Assets/Scenes/AsiaLevelMode1.unity
+    path: Assets/Scenes/AsiaLevel.unity
     guid: 1b48d01a5b42a0440958c97f946d7d5b
   - enabled: 1
     path: Assets/Scenes/Credito.unity
@@ -26,4 +26,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Informacion.unity
     guid: 7eb1d147a0786e94aad1a4aab0ee3bcd
+  - enabled: 1
+    path: Assets/Scenes/AfricaLevel.unity
+    guid: 7028ef4bedfac8e4fadc462b7c6977ea
+  - enabled: 1
+    path: Assets/Scenes/AmericaLevel.unity
+    guid: 83074abc425cf7e469b8f9d0fad371c8
+  - enabled: 1
+    path: Assets/Scenes/EuropaLevel.unity
+    guid: ab52f29565792b64193e0b2feaecc654
+  - enabled: 1
+    path: Assets/Scenes/OceaniaLevel.unity
+    guid: f5ef8c1fe19f80942998d0d413fce9c3
   m_configObjects: {}

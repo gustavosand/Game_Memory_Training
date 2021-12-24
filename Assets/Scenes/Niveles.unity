@@ -217,6 +217,18 @@ MonoBehaviour:
           m_StringArgument: Modos
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1655457196}
+        m_TargetAssemblyTypeName: Controlador, Assembly-CSharp
+        m_MethodName: SetLevelName
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: OceaniaLevel
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &210991509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,6 +748,18 @@ MonoBehaviour:
           m_StringArgument: Modos
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1655457196}
+        m_TargetAssemblyTypeName: Controlador, Assembly-CSharp
+        m_MethodName: SetLevelName
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: AfricaLevel
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &714872770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -870,6 +894,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Modos
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1655457196}
+        m_TargetAssemblyTypeName: Controlador, Assembly-CSharp
+        m_MethodName: SetLevelName
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: EuropaLevel
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &763644188
@@ -1434,6 +1470,18 @@ MonoBehaviour:
           m_StringArgument: Modos
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1655457196}
+        m_TargetAssemblyTypeName: Controlador, Assembly-CSharp
+        m_MethodName: SetLevelName
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: AsiaLevel
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1675522018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1793,6 +1841,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Modos
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1655457196}
+        m_TargetAssemblyTypeName: Controlador, Assembly-CSharp
+        m_MethodName: SetLevelName
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: AmericaLevel
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2144972368

@@ -8,7 +8,7 @@ public class AsiaTimeController : MonoBehaviour
     [SerializeField] Text tiempo;
 
     private float restante;
-    public bool enMarcha;
+    public static bool enMarcha;
     private void Awake() {
        restante = (min * 60) + seg; 
        enMarcha = true;

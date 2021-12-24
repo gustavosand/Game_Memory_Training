@@ -17,7 +17,11 @@ public class AsiaCardsController : MonoBehaviour
 	public static int cantSelected;
 	public static GameObject XSelected;
 	public static GameObject YSelected;
-	public static int LEVEL_MODE;
+	public AudioSource cardC;
+
+    public void ClickCheck(){
+        cardC.Play(0);
+    }
 
 	// Start is called before the first frame update
     void Start()
@@ -26,11 +30,16 @@ public class AsiaCardsController : MonoBehaviour
 		GenerateCards();
         AddCards();
 		cantSelected = 0;
+		AsiaTimeController.enMarcha = true;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+		if(AsiaTimeController.enMarcha == false){
+			AsiaController.CambiarEscena("Niveles");
+		}
+		
         if(cantSelected == 2){
 			//Aniamtion here
 			//end animation
@@ -42,7 +51,11 @@ public class AsiaCardsController : MonoBehaviour
 			if(xScript.GetId() == yScript.GetId()){
 				xScript.SaveAnimal();
 				yScript.SaveAnimal();
+				XSelected.SetActive(false);
+				YSelected.SetActive(false);
+				ClickCheck();
 				DataPlayer.monedas++;
+				
 			}else{
 				xScript.HideAnimal();
 				yScript.HideAnimal();
@@ -154,14 +167,21 @@ public class AsiaCardsController : MonoBehaviour
 			Image img = card.GetComponent<Image>();
 			img.sprite = spriteReverse;
 			AsiaCardDefinition cS = card.GetComponent<AsiaCardDefinition>();
-			cS.SetAnimalSprite(spritesArray[spriteCont]);
+			cS.SetAnimalSprite(spritesArray[spriteCont]+"_Imagen");
 			cS.SetId(spritesArray[spriteCont]);
 			
 			GameObject cardPair = Instantiate(Card,new Vector2 (0, 0), Quaternion.identity);
 			Image imgPair = cardPair.GetComponent<Image>();
 			imgPair.sprite = spriteReverse;
 			AsiaCardDefinition cSPair = cardPair.GetComponent<AsiaCardDefinition>();
-			cSPair.SetAnimalSprite(spritesArray[spriteCont]);
+			if(Controlador.LEVEL_MODE == 1){
+				cSPair.SetAnimalSprite(spritesArray[spriteCont]+"_Imagen");
+			}else if(Controlador.LEVEL_MODE == 2){
+				cSPair.SetAnimalSprite(spritesArray[spriteCont]+"_Texto");
+			}
+			else if(Controlador.LEVEL_MODE == 3){
+				cSPair.SetAnimalSprite(spritesArray[spriteCont]+"_Informacion");
+			}
 			cSPair.SetId(spritesArray[spriteCont]);
 			
 			cardsArray[i] = card;
@@ -171,25 +191,20 @@ public class AsiaCardsController : MonoBehaviour
 	}
 	
 	void SetSprites(){
-		spriteReverse = Resources.Load <Sprite>("cardReverse");
-		Sprite s = Resources.Load <Sprite>("cardReverse_0");
+		spriteReverse = Resources.Load <Sprite>("Rever/Reverso_Asia");
+		Sprite s = Resources.Load <Sprite>("Rever/Reverso_Asia");
 		//Image here 2, 3, 4, 5, 6, 7 or 8
 		//Las imagenes se emparejan por nombre por lo que los nombres
 		//tmpo
-		LEVEL_MODE = 1;
-		if(LEVEL_MODE == 1){
-			spritesArray = new string[2]{
-			"but",
-			"mon"
-			};
-		}else if(LEVEL_MODE == 2){
-			
-		}else{
-			
-		}
-		
-	
-		
+		//LEVEL_MODE = 1;
+		spritesArray = new string[6]{
+			"Asia/CaballoPr",
+			"Asia/PitonIndia",
+			"Asia/Tigre",
+			"Asia/OsoPanda",
+			"Asia/ElefanteAsitico",
+			"Asia/PandaRojo",
+		};
 		
 	}
 	
