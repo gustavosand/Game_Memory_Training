@@ -65,7 +65,7 @@ public class AmericaCardsController : MonoBehaviour
 		}
 		
 		if(isLevelCompleted()){
-			AmericaController.CambiarEscena("Niveles");
+			AmericaController.CambiarEscena("EuropaLevel");
 		}
 		
     }
@@ -197,13 +197,13 @@ public class AmericaCardsController : MonoBehaviour
 		//Las imagenes se emparejan por nombre por lo que los nombres
 		//tmpo
 		//LEVEL_MODE = 1;
-		spritesArray = new string[6]{
+		spritesArray = new string[2]{
 			"America/DelfinRosado",
 			"America/GatoAndino",
-			"America/GuacamayoAzul",
+			/*"America/GuacamayoAzul",
 			"America/ManatiCaribe",
 			"America/RatonLomas",
-			"America/TapirCentroamericano",
+			"America/TapirCentroamericano",*/
 		};
 		
 	}

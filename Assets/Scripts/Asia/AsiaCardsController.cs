@@ -65,7 +65,7 @@ public class AsiaCardsController : MonoBehaviour
 		}
 		
 		if(isLevelCompleted()){
-			AsiaController.CambiarEscena("Niveles");
+			AsiaController.CambiarEscena("AfricaLevel");
 		}
 		
     }

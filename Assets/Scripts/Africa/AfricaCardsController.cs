@@ -65,7 +65,7 @@ public class AfricaCardsController : MonoBehaviour
 		}
 		
 		if(isLevelCompleted()){
-			AfricaController.CambiarEscena("Niveles");
+			AfricaController.CambiarEscena("OceaniaLevel");
 		}
 		
     }
@@ -197,13 +197,14 @@ public class AfricaCardsController : MonoBehaviour
 		//Las imagenes se emparejan por nombre por lo que los nombres
 		//tmpo
 		//LEVEL_MODE = 1;
-		spritesArray = new string[6]{
+		spritesArray = new string[7]{
 			"Africa/CulebraCiega",
 			"Africa/ElefanteAfricano",
 			"Africa/Gorilla",
 			"Africa/Guepardo",
 			"Africa/HipopotamoPigmeo",
 			"Africa/Jirafa",
+			"Africa/RinoceronteBlanco",
 		};
 		
 	}

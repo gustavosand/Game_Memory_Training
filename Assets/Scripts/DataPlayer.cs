@@ -7,6 +7,8 @@ public class DataPlayer : MonoBehaviour
 {
 	[SerializeField] Text mon;
 	public static int monedas = 50; 
+	public static bool h = false; 
+	public static bool AmericaCheck = false; 
     // Start is called before the first frame update
     void Start()
     {

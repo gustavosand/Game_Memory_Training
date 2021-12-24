@@ -13,6 +13,10 @@ public class Controlador : MonoBehaviour
         SceneManager.LoadScene(nombre);
     }
 	
+	public void CambiarImg(){
+        //SceneManager.LoadScene();
+    }
+	
 	public void LoadLevel(int mode){
 		if(mode == 4){
 			System.Random rnd = new System.Random();

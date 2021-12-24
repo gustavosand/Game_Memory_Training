@@ -65,7 +65,7 @@ public class EuropaCardsController : MonoBehaviour
 		}
 		
 		if(isLevelCompleted()){
-			EuropaController.CambiarEscena("Niveles");
+			EuropaController.CambiarEscena("AsiaLevel");
 		}
 		
     }
@@ -197,13 +197,13 @@ public class EuropaCardsController : MonoBehaviour
 		//Las imagenes se emparejan por nombre por lo que los nombres
 		//tmpo
 		//LEVEL_MODE = 1;
-		spritesArray = new string[6]{
+		spritesArray = new string[5]{
 			"Europa/AguilaImperial",
 			"Europa/AguilaReal",
 			"Europa/CiguenaNegra",
 			"Europa/LinceIberico",
 			"Europa/Nutria",
-			"Europa/RanaKarpatos",
+			/*"Europa/RanaKarpatos",*/
 		};
 		
 	}

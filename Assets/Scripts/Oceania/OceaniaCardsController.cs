@@ -197,13 +197,15 @@ public class OceaniaCardsController : MonoBehaviour
 		//Las imagenes se emparejan por nombre por lo que los nombres
 		//tmpo
 		//LEVEL_MODE = 1;
-		spritesArray = new string[6]{
+		spritesArray = new string[8]{
 			"Oceania/AlcatrazAbbot",
 			"Oceania/Carricero",
 			"Oceania/DelfinHector",
 			"Oceania/DemonioDeTazmania",
 			"Oceania/Kakapo",
 			"Oceania/Murcielago",
+			"Oceania/RanaCorroboree",
+			"Oceania/TortugaPantano"
 		};
 		
 	}
