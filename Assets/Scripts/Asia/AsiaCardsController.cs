@@ -17,6 +17,7 @@ public class AsiaCardsController : MonoBehaviour
 	public static int cantSelected;
 	public static GameObject XSelected;
 	public static GameObject YSelected;
+	public static int LEVEL_MODE;
 
 	// Start is called before the first frame update
     void Start()
@@ -171,15 +172,25 @@ public class AsiaCardsController : MonoBehaviour
 	
 	void SetSprites(){
 		spriteReverse = Resources.Load <Sprite>("cardReverse");
-		
+		Sprite s = Resources.Load <Sprite>("cardReverse_0");
 		//Image here 2, 3, 4, 5, 6, 7 or 8
 		//Las imagenes se emparejan por nombre por lo que los nombres
-	
-		Sprite s = Resources.Load <Sprite>("cardReverse_0");
-		spritesArray = new string[2]{
+		//tmpo
+		LEVEL_MODE = 1;
+		if(LEVEL_MODE == 1){
+			spritesArray = new string[2]{
 			"but",
 			"mon"
-		};
+			};
+		}else if(LEVEL_MODE == 2){
+			
+		}else{
+			
+		}
+		
+	
+		
+		
 	}
 	
 	void Shuffle(GameObject[] values){
