@@ -13,9 +13,14 @@ public class Controlador : MonoBehaviour
         SceneManager.LoadScene(nombre);
     }
 	
-	public void CambiarImg(){
-        //SceneManager.LoadScene();
+	public void MostrarHistoria(){
+		if(!DataPlayer.h){
+			SceneManager.LoadScene("Historia");
+		}else{
+			SceneManager.LoadScene("Niveles");
+		}
     }
+	
 	
 	public void LoadLevel(int mode){
 		if(mode == 4){

@@ -9,6 +9,8 @@ public class DataPlayer : MonoBehaviour
 	public static int monedas = 50; 
 	public static bool h = false; 
 	public static bool AmericaCheck = false; 
+	public static bool EuropaCheck = false; 
+	public static bool AsiaCheck = false; 
     // Start is called before the first frame update
     void Start()
     {
